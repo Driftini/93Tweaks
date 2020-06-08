@@ -1,0 +1,60 @@
+.ui_window {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+		background-color: transparent;
+		background-image: linear-gradient(0,#666666bc,#999999bc);
+		border-top: 1px solid #555;
+	  border-left: 1px solid #555;
+		padding: 3px;
+		box-shadow: 1px 0 #000,0 1px #000,1px 1px #000,inset 1px 1px #fff,0 0 20px -1px #0000009f;
+		backdrop-filter: blur(3px)
+}
+
+.ui_window__head {
+	background: none !important;
+	color: black;
+	margin-bottom: 3px;
+	text-shadow: 0 0 6px #fff
+}
+
+.ui_window__head__title {
+	line-height: 17px
+}
+
+.ui_window__head button {
+	margin-left: 15px;
+	background: none;
+	border: none;
+	box-shadow: none;
+	top: 3px;
+	right: 5px;
+	color: white;
+	text-shadow: -1px -1px 0 #000, -1px 0 0 #000, 0 -1px 0 #000;
+}
+
+.ui_window__head button:active {
+	border: none !important;
+	box-shadow: none !important;
+	text-shadow: -1px -1px 0 #000, -1px 0 0 #000, 0 -1px 0 #000;
+	color: #ddd
+}
+
+.ui_explorer__selected_file {
+	background-color: silver !important;
+}
+
+.ui_window__body {
+	margin-right: -1px;
+}
+
+.ui_explorer__nav {
+	margin-left: 1px;
+	margin-right: -2px;
+}
+
+.ui_menu .ui_menu__submenu {
+	top: revert !important;
+	left: revert !important;
+}
