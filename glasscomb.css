@@ -19,8 +19,8 @@
     text-shadow: 0 0 6px #fff
 }
 
-.ui_menu_trigger {
-    text-shadow: 0 0 6px #fff
+.ui_menu_trigger:not(.ui_terminal) {
+    text-shadow: 0 0 6px #fff;
 }
 
 .ui_window__head__title {
