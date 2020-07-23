@@ -23,13 +23,13 @@
 
 .ui_window {
 	box-shadow: 0 0 0 1px #3d3a38;
-	background: #efebe7;
-	border-left: 1px solid #ffffff;
-	border-bottom: 1px solid #d8cfc7;
-	border-right: 1px solid #d8cfc7;
-	border-top: 1px solid #61492f;
 	border-radius: 7px 7px 0 0;
 	padding-left: 2px;
+	border-left: 1px solid #fff;
+	border-bottom: 1px solid #d8cfc7;
+	border-right: 1px solid #d8cfc7;
+	border-top: 1px solid #fff;
+	background: linear-gradient(to bottom, #f8f6f3 0%, #efebe7 100%)
 }
 
 .ui_window__head {
@@ -38,6 +38,15 @@
 	height: 23px;
 	padding: 2px 2px 0 6px;
 	align-items: center;
+	background: none;
+}
+
+.ui_window--active {
+	background: #efebe7;
+	border-left: 1px solid #fff;
+	border-bottom: 1px solid #d8cfc7;
+	border-right: 1px solid #d8cfc7;
+	border-top: 1px solid #61492f;
 }
 
 .ui_window--active .ui_window__head {
@@ -51,7 +60,15 @@
 	text-align: center;
 	font-weight: bold;
 	letter-spacing: 1px;
+	color: #3c3c3b;
+}
+
+.ui_window--active .ui_window__head__title {
+	text-align: center;
+	font-weight: bold;
+	letter-spacing: 1px;
 	text-shadow: 1px 1px 0 #413528, 2px 2px 0 #8f6438;
+	color: white;
 }
 
 .ui_window__head__icon {
@@ -62,17 +79,27 @@
 	margin: 0 1px;
 	height: 18px;
 	width: 24px;
-	border: 1px solid #6b461f !important;
 	box-shadow: inset 0 0 0 1px #ffffff5f !important;
 	border-radius: 3px;
-	background: linear-gradient(to bottom, #e9ae70 0%, #c98540 49%, #b77939 50%, #bf7c38 100%);
+	border: 1px solid #84817f !important;
+	background: linear-gradient(to bottom, #fdfcfc 0%, #ede9e5 100%);
 	transform: translate(-1px, -2px);
+}
+
+.ui_window--active .ui_window__head button {
+	border: 1px solid #6b461f !important;
+	background: linear-gradient(to bottom, #e9ae70 0%, #c98540 49%, #b77939 50%, #bf7c38 100%);
 }
 
 .ui_window__head button::before {
 	transform: translate(5px,2px);
 	color: #fff;
-	text-shadow: -1px 1px 0 #6f4922, 1px -1px 0 #6f4922, 1px 1px 0 #6f4922, -1px -1px 0 #6f4922
+	text-shadow: -1px 1px 0 #6f4922, 1px -1px 0 #6f4922, 1px 1px 0 #6f4922, -1px -1px 0 #6f4922;
+	filter: grayscale(100%) invert(75%)
+}
+
+.ui_window--active .ui_window__head button::before {
+	filter: none;
 }
 
 .ui_window__head__close::before {
