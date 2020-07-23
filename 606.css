@@ -105,12 +105,25 @@ input:not([type="checkbox"]):not([type="radio"]):not([type="range"]):focus, sele
 }
 
 .ui_window__head button:active {
-	
+	border: 1px solid #898786 !important;
+	background: linear-gradient(to bottom, #bdb2a6 0%, #bcb0a5 49%, #b8ac9f 50%, #baaea2 100%);
+	box-shadow: inset 0 0 0 1px #d4cdc5 !important;
 }
 
 .ui_window--active .ui_window__head button {
 	border: 1px solid #6b461f !important;
 	background: linear-gradient(to bottom, #e9ae70 0%, #c98540 49%, #b77939 50%, #bf7c38 100%);
+}
+
+.ui_window--active .ui_window__head button:hover {
+	border: 1px solid #6f4821 !important;
+	background: linear-gradient(to bottom, #f1bb83 0%, #d6934d 49%, #c47f38 50%, #cd8840 100%);
+}
+
+.ui_window--active .ui_window__head button:active {
+	border: 1px solid #7f5c38 !important;
+	background: linear-gradient(to bottom, #d49350 0%, #986a3b 49%, #835d37 50%, #8a6137 100%);
+	box-shadow: inset 0 0 0 1px #d4cdc57f !important;
 }
 
 .ui_window__head button::before {
