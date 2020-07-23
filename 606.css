@@ -3,11 +3,22 @@
 	background-size: cover;
 }
 
-.ui_explorer__nav button {
+.ui_explorer__nav button, .btn, button:not(.unstyled), input[type="reset"], input[type="submit"], input[type="button"] {
 	border: 1px solid #736a60 !important;
 	box-shadow: none !important;
 	border-radius: 3px;
 	background: linear-gradient(to bottom, #f8f6f5 0%, #f2efec 49%, #ebe6e1 50%, #efebe8 100%);
+}
+
+.btn, button:not(.unstyled), input[type="reset"], input[type="submit"], input[type="button"] {
+	height: 24px;
+	box-shadow: 1px 1px 1px -0.5px #0000003f !important;
+}
+
+.ui_explorer__nav input, input:not([type="checkbox"]):not([type="radio"]):not([type="range"]), select, textarea, .ui_alert--help .ui_alert__text {
+	border: 1px solid #81756a !important;
+	border-radius: 3px;
+	box-shadow: inset 0 1px 1px 0 #0000003f !important;
 }
 
 .ui_window {
@@ -40,7 +51,7 @@
 	text-align: center;
 	font-weight: bold;
 	letter-spacing: 1px;
-	text-shadow: 1px 1px 0 #413528, 2px 2px 0 #413528;
+	text-shadow: 1px 1px 0 #413528, 2px 2px 0 #8f6438;
 }
 
 .ui_window__head__icon {
@@ -51,8 +62,8 @@
 	margin: 0 1px;
 	height: 18px;
 	width: 24px;
-	border: 1px solid #6b461f;
-	box-shadow: inset 0 0 0 1px #ffffff5f;
+	border: 1px solid #6b461f !important;
+	box-shadow: inset 0 0 0 1px #ffffff5f !important;
 	border-radius: 3px;
 	background: linear-gradient(to bottom, #e9ae70 0%, #c98540 49%, #b77939 50%, #bf7c38 100%);
 	transform: translate(-1px, -2px);
