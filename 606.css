@@ -1,3 +1,8 @@
+#s42_background {
+	background: url(https://oswallpapers.com/wp-content/uploads/2016/07/warty-final-ubuntu-3.jpg?v=2);
+	background-size: cover;
+}
+
 .ui_window {
 	box-shadow: 0 0 0 1px #3d3a38;
 	background: #efebe7;
@@ -6,12 +11,15 @@
 	border-right: 1px solid #d8cfc7;
 	border-top: 1px solid #61492f;
 	border-radius: 7px 7px 0 0;
+	padding-left: 2px;
 }
 
 .ui_window__head {
-	margin: -4px -3px 2px -4px;
+	margin: -4px -3px 3px -3px;
 	border-radius: 7px 7px 0 0;
 	height: 23px;
+	padding: 2px 2px 0 6px;
+	align-items: center;
 }
 
 .ui_window--active .ui_window__head {
@@ -19,6 +27,17 @@
 	box-shadow: inset 0 0 0 1px #0000001f;
 	border-bottom: 1px solid #835d37;
 	border-top: 1px solid #f2c99f;
+}
+
+.ui_window__head__title {
+	text-align: center;
+	font-weight: bold;
+	letter-spacing: 1px;
+	text-shadow: 1px 1px 0 #413528, 2px 2px 0 #413528;
+}
+
+.ui_window__head__icon {
+	transform: translateY(-1px)
 }
 
 .ui_window__head button {
@@ -29,7 +48,7 @@
 	box-shadow: inset 0 0 0 1px #ffffff5f;
 	border-radius: 3px;
 	background: linear-gradient(to bottom, #e9ae70 0%, #c98540 49%, #b77939 50%, #bf7c38 100%);
-	transform: translate(-1px, -1px);
+	transform: translate(-1px, -2px);
 }
 
 .ui_window__head button::before {
