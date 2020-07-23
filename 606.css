@@ -1,0 +1,54 @@
+.ui_window {
+	box-shadow: 0 0 0 1px #3d3a38;
+	background: #efebe7;
+	border-left: 1px solid #ffffff;
+	border-bottom: 1px solid #d8cfc7;
+	border-right: 1px solid #d8cfc7;
+	border-top: 1px solid #61492f;
+	border-radius: 7px 7px 0 0;
+}
+
+.ui_window__head {
+	margin: -4px -3px 2px -4px;
+	border-radius: 7px 7px 0 0;
+	height: 23px;
+}
+
+.ui_window--active .ui_window__head {
+	background: linear-gradient(to bottom, #e8aa6a 0%, #d18c46 49%, #c8823a 50%, #d38e48 100%);
+	box-shadow: inset 0 0 0 1px #0000001f;
+	border-bottom: 1px solid #835d37;
+	border-top: 1px solid #f2c99f;
+}
+
+.ui_window__head button {
+	margin: 0 1px;
+	height: 18px;
+	width: 24px;
+	border: 1px solid #6b461f;
+	box-shadow: inset 0 0 0 1px #ffffff5f;
+	border-radius: 3px;
+	background: linear-gradient(to bottom, #e9ae70 0%, #c98540 49%, #b77939 50%, #bf7c38 100%);
+	transform: translate(-1px, -1px);
+}
+
+.ui_window__head button::before {
+	transform: translate(5px,2px);
+	color: #fff;
+	text-shadow: -1px 1px 0 #6f4922, 1px -1px 0 #6f4922, 1px 1px 0 #6f4922, -1px -1px 0 #6f4922
+}
+
+.ui_window__head__close::before {
+	content: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAA8UlEQVQY03WQMUsCARiGn+9wabybmjSMuMnh/Ae3pYmguAhO/QJxValwFtwaHBv8AZGO/YNOcDOC3BrMhpDj9M6vyUO7esbne3n5eOXx9pLZ+5cC1N1z4YDR85sC5M5ModdwdE+v4eh8WGU+rCZ8Kgq3cUPn4YW7ek4Bbkaz2EfhFry+S7dm6390a7Z6fRcjDHzKeVPalSy/aVeylPOmhIFP6vN7A8A6iBLBdRCxvxvCjsl0qYPxIhEcjBdMpksVdtAspI9+ahbS+pczDodrFTOUHEtKjiWtYib2Asj9tc3rh68AV451NPiTt1KAi9MT+QGqupz0MNEpRQAAAABJRU5ErkJggg==);
+	transform: translate(6px, 1px) !important;
+}
+
+.ui_window__head__maximize::before {
+	content: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAh0lEQVQY02NsSzD/z0AEYPn75xdDzeJzeBW1xBoxMP3985ugaX///GZggSmsC9XAqqhp9Q2Ywl9QXb8YAs3EGZEVrT/18j9MjuXrz78MDAwMDF9//mV4+/kXimnIcizIEowM/3D7mhGuiIFh+4V3/1E1Imi4wv5tD3GaxsjAwMBY5CVHVIADAPjtOteinbdcAAAAAElFTkSuQmCC);
+	transform: translate(6px, 1px) !important;
+}
+
+.ui_window__head__minimize::before {
+	content: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAECAYAAAC3OK7NAAAALElEQVQI12PM95T7z0AEYGFkYGDo3/YQr6JCL3kGJkYiTGNkYGBgLPIizmoAtlkGujGaTjEAAAAASUVORK5CYII=);
+	transform: translate(6px, 1px) !important;
+}
