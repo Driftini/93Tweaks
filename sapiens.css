@@ -285,3 +285,23 @@ input:not([type="checkbox"]):not([type="radio"]):not([type="range"]):focus, sele
 .ui_menu__separator.ui_menu__item--focus {
 	background: none !important;
 }
+
+.skin_inset, .skin_inset_deep {
+	border-top: 1px #cbc1b7 solid;
+	border-left: none;
+	border-right: none;
+	border-bottom: 1px #bfbcb9 solid;
+	box-shadow: 0 1px 0 1px #fcfbfa;
+}
+
+#s42_taskbar {
+	background: #efebe7;
+	border-top: 1px solid #ffffff;
+	box-shadow: none;
+}
+
+#s42_notif {
+	border: 1px solid transparent;
+	box-shadow: none;
+	background: transparent;
+}
