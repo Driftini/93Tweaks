@@ -1,3 +1,28 @@
+::selection {
+	background: #ffd799;
+}
+
+.ui_icon span {
+	padding: 3px 4px !important;
+	border-radius: 6px;
+}
+
+.ui_selected span {
+	padding: 3px 4px !important;
+	background: #ffd799 !important;
+	color: #000 !important;
+	border-radius: 6px;
+}
+
+.ui_selected img {
+	filter: brightness(0.6) sepia(100%) hue-rotate(10deg) saturate(6) !important;
+}
+
+.ui_select_box {
+	border: 1px solid #ffd799 !important;
+	background: #ffd7992f !important;
+}
+
 #s42_background {
 	background: url(https://oswallpapers.com/wp-content/uploads/2016/07/warty-final-ubuntu-3.jpg?v=2);
 	background-size: cover;
@@ -21,16 +46,28 @@
 	background: linear-gradient(to bottom, #fefefe 0%, #f8f7f5 49%, #f1eeea 50%, #f5f3f0 100%);
 }
 
-.ui_explorer__nav input, input:not([type="checkbox"]):not([type="radio"]):not([type="range"]), select, textarea, .ui_alert--help .ui_alert__text {
+.btn:hover, button:not(.unstyled):hover, input[type="reset"]:hover, input[type="submit"]:hover, input[type="button"]:hover {
+	border: 1px #8f4b1e solid !important;
+	box-shadow: 0 0 0px 1px #e6a070 !important;
+	background: linear-gradient(to bottom, #fefefe 0%, #f8f7f5 49%, #f1eeea 50%, #f5f3f0 100%);
+}
+
+.ui_explorer__nav input, input:not([type="checkbox"]):not([type="radio"]):not([type="range"]), select, textarea:not(.ui_terminal), .ui_alert--help .ui_alert__text {
 	border: 1px solid #81756a !important;
 	border-radius: 3px;
 	box-shadow: inset 0 1px 1px 0 #0000003f !important;
 }
 
-input:not([type="checkbox"]):not([type="radio"]):not([type="range"]):focus, select:focus, textarea:focus, .ui_alert--help .ui_alert__text:focus {
+input:not([type="checkbox"]):not([type="radio"]):not([type="range"]):focus, select:focus, textarea:not(.ui_terminal):focus, .ui_alert--help .ui_alert__text:focus {
 	border: 1px solid #8f4b1e !important;
 	box-shadow: inset 0 0 0 1px #e6a070 !important;
 	outline: none;
+}
+
+.ui_terminal > code > div > textarea, .ui_terminal > code > div > textarea:focus {
+	box-shadow: none !important;
+	border: none !important;
+	border-radius: none !important;
 }
 
 .ui_window {
@@ -151,3 +188,4 @@ input:not([type="checkbox"]):not([type="radio"]):not([type="range"]):focus, sele
 	content: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAECAYAAAC3OK7NAAAALElEQVQI12PM95T7z0AEYGFkYGDo3/YQr6JCL3kGJkYiTGNkYGBgLPIizmoAtlkGujGaTjEAAAAASUVORK5CYII=);
 	transform: translate(6px, 1px) !important;
 }
+
