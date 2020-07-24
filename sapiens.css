@@ -216,3 +216,22 @@ input:not([type="checkbox"]):not([type="radio"]):not([type="range"]):focus, sele
 	content: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAECAYAAAC3OK7NAAAALElEQVQI12PM95T7z0AEYGFkYGDo3/YQr6JCL3kGJkYiTGNkYGBgLPIizmoAtlkGujGaTjEAAAAASUVORK5CYII=);
 	transform: translate(6px, 1px) !important;
 }
+
+.ui_menu--bar {
+	width: 100%;
+	background: #e8e3de;
+	border-bottom: 1px solid #cbc1b7;
+	box-shadow: -1px 0 0 1px #e8e3de, 1px 0 0 1px #e8e3de, 0 1px 0 1px #fff;
+	margin-bottom: 3px;
+}
+
+.ui_menu__submenu.ui_menu--open ul, .ui_menu--popup.ui_menu--open ul {
+	border: 1px solid #b6a391;
+	box-shadow: none;
+	background: #f8f5f2;
+	padding: 1px;
+}
+
+.ui_menu__separator {
+	background: #f00 !important;
+}
