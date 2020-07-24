@@ -14,6 +14,10 @@
 	border-radius: 6px;
 }
 
+.ui_explorer--details > .ui_icon--focus > span, .ui_explorer--column > .ui_icon--focus > span, .ui_explorer--list > .ui_icon--focus > span, .ui_explorer--workspace > .ui_icon--focus > span, .ui_explorer--workspace--full > .ui_icon--focus > span, .ui_explorer--icons > .ui_icon--focus > span, .ui_explorer--details > .ui_icon:focus > span, .ui_explorer--column > .ui_icon:focus > span, .ui_explorer--list > .ui_icon:focus > span, .ui_explorer--workspace > .ui_icon:focus > span, .ui_explorer--workspace--full > .ui_icon:focus > span, .ui_explorer--icons > .ui_icon:focus > span {
+	outline: none;
+}
+
 .ui_selected img {
 	filter: brightness(0.6) sepia(100%) hue-rotate(10deg) saturate(6) !important;
 }
