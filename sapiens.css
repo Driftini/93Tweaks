@@ -233,5 +233,29 @@ input:not([type="checkbox"]):not([type="radio"]):not([type="range"]):focus, sele
 }
 
 .ui_menu__separator {
-	background: #f00 !important;
+	background: none;
+	border-bottom: 1px #fefdfc solid;
+	margin: 1px 3px !important;
+}
+
+.ui_menu__separator hr {
+	border-top: 1px #c6c4c2 solid !important;
+}
+
+.ui_menu__item {
+	border: 1px transparent solid !important;
+}
+
+.ui_menu__item.ui_menu__item--focus {
+	background: linear-gradient(to bottom, #feddab 0%, #f5c57d 100%) !important;
+	border-left: 1px solid #f2c176 !important;
+	border-right: 1px solid #f2c176 !important;
+	border-bottom: 1px solid #eeba6a !important;
+	border-top: 1px solid #f8cc88 !important;
+	border-radius: 3px;
+	color: #000 !important;
+}
+
+.ui_menu__separator.ui_menu__item--focus {
+	background: none !important;
 }
