@@ -161,7 +161,7 @@ input:not([type="checkbox"]):not([type="radio"]):not([type="range"]):focus, sele
 
 .ui_window__head__title {
 	text-align: center;
-	font-weight: bold;
+	text-shadow: 1px 0 0 #3c3c3b;
 	letter-spacing: 1px;
 	color: #3c3c3b;
 }
@@ -170,7 +170,7 @@ input:not([type="checkbox"]):not([type="radio"]):not([type="range"]):focus, sele
 	text-align: center;
 	font-weight: bold;
 	letter-spacing: 1px;
-	text-shadow: 1px 1px 0 #413528, 2px 2px 0 #8f6438;
+	text-shadow: 1px 0 0 white, 2px 1px 0 #413528, 2px 1px 0 #413528;
 	color: white;
 }
 
