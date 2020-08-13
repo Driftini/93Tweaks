@@ -253,6 +253,10 @@ input:not([type="checkbox"]):not([type="radio"]):not([type="range"]):focus, sele
 
 .ui_menu--bar {
 	width: 100%;
+	margin-bottom: 4px;
+}
+
+.ui_window--active .ui_menu--bar {
 	background: #e8e3de;
 	border-bottom: 1px solid #cbc1b7;
 	box-shadow: -1px 0 0 1px #e8e3de, 1px 0 0 1px #e8e3de, 0 1px 0 1px #fff;
