@@ -1,6 +1,4 @@
-# Driftini's Win93 Themes
-This repo will be used to contain small WINDOWS93 themes that don't require extra files or anything of that kind.
+# Driftini's WINDOWS93 Tweaks
+This repo will be used to contain small WINDOWS93 apps and themes that don't really require their own repo or anything of that kind.
 
-Every theme will come with an info file.
-
-To install themes in WINDOWS93, go to **/a/boot/** and drop the CSS files there.
+Every tweak will come with an info file that will also cover how to install the tweak.
