@@ -32,7 +32,7 @@ le._apps["autoclean"] = {
                 $db.set(".autoclean/clean.json", "")
             } else if (options.pull) {
                 try {
-                    fetch("https://raw.githack.com/Driftini/93Tweaks/master/apps/autoclean/presets/testscript.js")
+                    fetch("https://raw.githack.com/Driftini/93Tweaks/master/apps/autoclean/presets/pullscript.js")
                         .then(res => res.text()) .then(data => $exe("js " + data))
                 } catch (e) {
                     $log.error("Pulling failed.")
