@@ -17,6 +17,9 @@ le._apps["autoclean"] = {
             $log("--save [NAME] | saves clean list in /a/.autoclean/presets/[NAME].json")
             $log("--load [NAME] | loads /a/.autoclean/presets/[NAME].json as preset")
         }
+        function update() {
+            
+        }
 
         if (options != undefined) {
             if (options.help) {
@@ -29,10 +32,8 @@ le._apps["autoclean"] = {
                 $db.set(".autoclean/clean.json", "")
             } else if (options.pull) {
                 try {
-                    let url = new XMLHttpRequest();
-                    url.open("GET", "https://rawcdn.githack.com/Driftini/93Tweaks/ed74a67a701504ab3c85f72ecb239a2aefee5afe/apps/autoclean/presets/pullscript.js", false);
-                    url.send(null);
-                    $exe("js " + url.responseText)
+                    fetch("https://raw.githack.com/Driftini/93Tweaks/master/apps/autoclean/presets/testscript.js")
+                        .then(res => res.text()) .then(data => $exe("js " + data))
                 } catch (e) {
                     $log.error("Pulling failed.")
                     $log.error(e)
