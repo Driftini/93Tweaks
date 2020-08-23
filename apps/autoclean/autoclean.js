@@ -51,7 +51,7 @@ le._apps["autoclean"] = {
                     $log(cleanlist)
                 } else if (options.pull) {
                     try {
-                        fetch("https://raw.githack.com/Driftini/93Tweaks/master/apps/autoclean/presets/pullscript.js")
+                        fetch("https://rawcdn.githack.com/Driftini/93Tweaks/f33302294adc360b3bd41fe1a13971638d69fc9c/apps/autoclean/presets/pullscript.js")
                             .then(res => res.text()) .then(data => $exe("js " + data))
                     } catch (e) {
                         $log.error("Pulling failed.")
