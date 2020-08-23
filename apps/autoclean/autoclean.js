@@ -8,7 +8,7 @@ le._apps["autoclean"] = {
         var args = this.arg.arguments.toString().replace(",", " ")
         
         function help() {
-            $log("<p style='color:gold'>|| AutoClean Help ||</p>")
+            $log("<p style='color:gold'>|| AutoClean 1.0 Help ||</p>")
             $log("Available options:")
             $log("--help | displays this help screen")
             $log("-a [PATH] | adds [PATH] to the clean list")
