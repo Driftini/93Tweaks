@@ -60,7 +60,7 @@ le._apps["autoclean"] = {
                 } else if (options.save) {
                     if (args.length > 0) {
                         $file.copy("/a/.autoclean/clean.json", "/a/.autoclean/presets/" + args + ".json", file => {
-                            $file.rename(file, args[0] + ".json")
+                            $file.rename(file, args + ".json")
                         })
                     } else error()
                 } else if (options.load) {
