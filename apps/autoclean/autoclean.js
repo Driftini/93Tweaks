@@ -82,4 +82,5 @@ $file.open("/a/.autoclean/clean.json", "String", (file) => {
         $file.delete(value)
         console.log(value + " deleted.")
     })
+    $explorer.refresh()
 })
