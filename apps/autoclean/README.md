@@ -14,7 +14,7 @@ fetch("https://rawcdn.githack.com/Driftini/93Tweaks/f33302294adc360b3bd41fe1a139
 
 ## Usage
 
-Run `autoclean -h` in the Terminal to view the help screen.
+Run `autoclean --help` in the Terminal to view the help screen.
 
 If you're a new user, you might also want to run `autoclean --pull` to quickly obtain recommended presets. Don't forget to load them with `autoclean --load [PRESET NAME]`, of course.
 
