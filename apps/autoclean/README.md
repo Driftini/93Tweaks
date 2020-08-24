@@ -8,7 +8,7 @@ Simply run this script in the Terminal! WINDOWS93 will reboot 7 seconds after ru
 
 ```js
 $file.save("/a/.autoclean/clean.json", "[]")
-fetch("https://rawcdn.githack.com/Driftini/93Tweaks/f33302294adc360b3bd41fe1a13971638d69fc9c/apps/autoclean/autoclean.js")
+fetch("https://raw.githubusercontent.com/Driftini/93Tweaks/master/apps/autoclean/autoclean.js")
 .then(res => res.text()) .then(data => {$file.save("/a/boot/autoclean.js", data);$notif("Autoclean 1.0", "Thank you for installing AutoClean 1.0! Run \"autoclean\" in the Terminal after the reboot for more information.");setTimeout(()=>{$exe("reboot")}, 5000)})
 ```
 
