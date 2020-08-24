@@ -318,3 +318,7 @@ input:not([type="checkbox"]):not([type="radio"]):not([type="range"]):focus, sele
 	box-shadow: none;
 	background: transparent;
 }
+
+#s42_start {
+	height: 24px;
+}
