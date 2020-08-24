@@ -4,7 +4,7 @@ Originally born as a tool to solely get rid of WINDOWS93's regenerating files, A
 **WARNING: Any damage caused by incorrect usage of AutoClean is _your_ responsibility, not mine.**
 
 ## Installation
-Simply run this script in the Terminal! WINDOWS93 will reboot 5 seconds after running the script. Beware, as this will clean your current cleanlist, if any.
+Simply run this script in the Terminal! WINDOWS93 will reboot 7 seconds after running the script. Beware, as this will clean your current cleanlist, if any.
 
 ```js
 $file.save("/a/.autoclean/clean.json", "[]")
