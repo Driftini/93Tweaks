@@ -80,5 +80,6 @@ le._apps["autoclean"] = {
 $file.open("/a/.autoclean/clean.json", "String", (file) => {
     JSON.parse(file).forEach((value) => {
         $file.delete(value)
+        console.log(value + " deleted.")
     })
 })
