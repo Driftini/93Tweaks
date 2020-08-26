@@ -7,7 +7,7 @@ Originally born as a tool to solely get rid of WINDOWS93's regenerating files, A
 Simply run this script in the Terminal! WINDOWS93 will reboot 7 seconds after running the script. Beware, as this will clean your current cleanlist, if any.
 
 ```js
-$file.save("/a/.autoclean/clean.json", "[]")
+$file.save("/a/.config/autoclean/clean.json", "[]")
 fetch("https://raw.githubusercontent.com/Driftini/93Tweaks/master/apps/autoclean/autoclean.js")
 .then(res => res.text()) .then(data => {$file.save("/a/boot/autoclean.js", data);$notif("Autoclean 1.0", "Thank you for installing AutoClean 1.0! Run \"autoclean\" in the Terminal after the reboot for more information.");setTimeout(()=>{$exe("reboot")}, 5000)})
 ```
@@ -20,4 +20,4 @@ If you're a new user, you might also want to run `autoclean --pull` to quickly o
 
 ## Uninstallation
 
-Delete `/a/boot/autoclean.js` and `/a/.autoclean/`.
+Delete `/a/boot/autoclean.js` and `/a/.config/autoclean/`.

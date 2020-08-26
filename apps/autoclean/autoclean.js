@@ -1,4 +1,4 @@
-var cleanlist = []
+let cleanlist = []
 
 le._apps["autoclean"] = {
     name: "AutoClean",
@@ -14,21 +14,21 @@ le._apps["autoclean"] = {
             $log("-a [PATH] | adds [PATH] to the clean list")
             $log("-r [PATH] | removes [PATH] from the clean list")
             $log("-c | clears the clean list")
-            $log("-v | shows current clean list")
+            $log("-v | views current clean list")
             $log("Preset-related options:")
             $log("--pull | pulls recommended presets from GitHub")
-            $log("--save [NAME] | saves clean list in /a/.autoclean/presets/[NAME].json")
-            $log("--load [NAME] | loads /a/.autoclean/presets/[NAME].json as preset")
+            $log("--save [NAME] | saves clean list in /a/.config/autoclean/presets/[NAME].json")
+            $log("--load [NAME] | loads /a/.config/autoclean/presets/[NAME].json as preset")
         }
         function error() {
             $log.error("Invalid syntax.")
         }
         function write() {
-            $db.set(".autoclean/clean.json", cleanlist)
+            $db.set(".config/autoclean/clean.json", cleanlist)
         }
 
         if (options != undefined) {
-            $file.open("/a/.autoclean/clean.json", "String", (file) => {
+            $file.open("/a/.config/autoclean/clean.json", "String", (file) => {
                 cleanlist = JSON.parse(file)
                 if (options.help) {
                     help()
@@ -59,13 +59,13 @@ le._apps["autoclean"] = {
                     }
                 } else if (options.save) {
                     if (args.length > 0) {
-                        $file.copy("/a/.autoclean/clean.json", "/a/.autoclean/presets/" + args + ".json", file => {
+                        $file.copy("/a/.config/autoclean/clean.json", "/a/.autoclean/presets/" + args + ".json", file => {
                             $file.rename(file, args + ".json")
                         })
                     } else error()
                 } else if (options.load) {
                     if (args.length > 0) {
-                        $file.copy("/a/.autoclean/presets/" + args + ".json", "/a/.autoclean/clean.json", file => {
+                        $file.copy("/a/.config/autoclean/presets/" + args + ".json", "/a/.autoclean/clean.json", file => {
                             $file.rename(file, "clean.json")
                         })
                     } else error()
@@ -77,7 +77,7 @@ le._apps["autoclean"] = {
     }
 }
 
-$file.open("/a/.autoclean/clean.json", "String", (file) => {
+$file.open("/a/.config/autoclean/clean.json", "String", (file) => {
     JSON.parse(file).forEach((value) => {
         $file.delete(value)
         console.log(value + " deleted.")

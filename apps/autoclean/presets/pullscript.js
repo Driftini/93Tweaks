@@ -1,6 +1,6 @@
 $log("Pulling presets...")
 
-let path = "/a/.autoclean/presets/"
+let path = "/a/.config/autoclean/presets/"
 let presets = ["nodesktop", "noregen", "essentials"]
 let done = 0
 
