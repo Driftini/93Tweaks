@@ -1,0 +1,23 @@
+{
+    "name": "Classic",
+    "author": "Driftini",
+    "override": true,
+    "style": {
+        "widthfix": true,
+        "windowsize": {
+            "width": 376,
+            "height": -1
+        },
+        "shadow": {
+            "x": 1,
+            "y": 0,
+            "blur": 0,
+            "color": "#aaa"
+        },
+        "color": "#aaa",
+        "spacing": 1,
+        "lineheight": -1,
+        "font": -1,
+        "size": 8
+    }
+}
