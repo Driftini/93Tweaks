@@ -59,13 +59,13 @@ le._apps["autoclean"] = {
                     }
                 } else if (options.save) {
                     if (args.length > 0) {
-                        $file.copy("/a/.config/autoclean/clean.json", "/a/.autoclean/presets/" + args + ".json", file => {
+                        $file.copy("/a/.config/autoclean/clean.json", "/a/.config/autoclean/presets/" + args + ".json", file => {
                             $file.rename(file, args + ".json")
                         })
                     } else error()
                 } else if (options.load) {
                     if (args.length > 0) {
-                        $file.copy("/a/.config/autoclean/presets/" + args + ".json", "/a/.autoclean/clean.json", file => {
+                        $file.copy("/a/.config/autoclean/presets/" + args + ".json", "/a/.config/autoclean/clean.json", file => {
                             $file.rename(file, "clean.json")
                         })
                     } else error()
