@@ -77,10 +77,12 @@ le._apps["autoclean"] = {
     }
 }
 
-$file.open("/a/.config/autoclean/clean.json", "String", (file) => {
+system42.on("splash:ready", function() {
+	$file.open("/a/.config/autoclean/clean.json", "String", (file) => {
     JSON.parse(file).forEach((value) => {
         $file.delete(value)
         console.log(value + " deleted.")
     })
     $explorer.refresh()
+    })
 })
