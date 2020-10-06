@@ -133,7 +133,7 @@ input:not([type="checkbox"]):not([type="radio"]):not([type="range"]):focus, sele
 
 .ui_window {
 	min-width: 250px;
-	min-height: 120px;
+	min-height: 140px;
 	box-shadow: 0 0 0 1px #3d3a38;
 	border-radius: 7px 7px 0 0;
 	padding-left: 2px;
