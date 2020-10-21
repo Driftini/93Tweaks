@@ -141,7 +141,8 @@ input:not([type="checkbox"]):not([type="radio"]):not([type="range"]):focus, sele
 	border-bottom: 1px solid #d8cfc7;
 	border-right: 1px solid #d8cfc7;
 	border-top: 1px solid #fff;
-	background: linear-gradient(to bottom, #f8f6f3 0%, #efebe7 100%)
+	background: linear-gradient(to bottom, #f8f6f3 0%, #efebe7 100%);
+	animation-duration: 0s !important;
 }
 
 .ui_window__head {
