@@ -113,14 +113,10 @@
 	content: "]";
 }
 
-.skin_inset, .skin_inset_deep, .ui_explorer__nav input, input:not([type="checkbox"]):not([type="radio"]):not([type="range"]), select, textarea:not(.ui_terminal), .ui_alert--help .ui_alert__text {
+.skin_inset_deep, .ui_explorer__nav input, input:not([type="checkbox"]):not([type="radio"]):not([type="range"]), select, textarea:not(.ui_terminal), .ui_alert--help .ui_alert__text {
 	border: 1px solid #81756a !important;
 	border-radius: 3px;
 	box-shadow: inset 0 1px 1px 0 #0000003f !important;
-}
-
-.ui_explorer_window .skin_inset_deep {
-	background: #fff;
 }
 
 input:not([type="checkbox"]):not([type="radio"]):not([type="range"]):focus, select:focus, textarea:not(.ui_terminal):focus, .ui_alert--help .ui_alert__text:focus {
@@ -145,7 +141,7 @@ input:not([type="checkbox"]):not([type="radio"]):not([type="range"]):focus, sele
 	border-bottom: 1px solid #d8cfc7;
 	border-right: 1px solid #d8cfc7;
 	border-top: 1px solid #fff;
-	background: linear-gradient(to bottom, #f8f6f3 0%, #efebe7 100%);
+	background: #efebe7;
 	animation-duration: 0s !important;
 }
 
@@ -155,11 +151,7 @@ input:not([type="checkbox"]):not([type="radio"]):not([type="range"]):focus, sele
 	height: 23px;
 	padding: 2px 2px 0 6px;
 	align-items: center;
-	background: none;
-}
-
-.ui_window__foot {
-	margin-right: 1px;
+	background: linear-gradient(to bottom, #ffffff 0%, #efebe7 100%);;
 }
 
 .ui_window--active {
@@ -205,7 +197,7 @@ input:not([type="checkbox"]):not([type="radio"]):not([type="range"]):focus, sele
 	border: 1px solid #84817f !important;
 	background: linear-gradient(to bottom, #fdfcfc 0%, #ede9e5 100%);
 	transform: translate(-1px, -2px);
-  	outline: none;
+  outline: none;
 }
 
 .ui_window__head button:hover, .ui_window__head button:hover:focus {
@@ -265,10 +257,6 @@ input:not([type="checkbox"]):not([type="radio"]):not([type="range"]):focus, sele
 
 .ui_menu--bar {
 	width: 100%;
-	margin-bottom: 4px;
-}
-
-.ui_window--active .ui_menu--bar {
 	background: linear-gradient(0deg,#e6e0db,#efebe7);
 	border-bottom: 1px solid #cbc1b7;
 	box-shadow: 0 1px 0 0 #fff;
@@ -310,13 +298,18 @@ input:not([type="checkbox"]):not([type="radio"]):not([type="range"]):focus, sele
 	background: none !important;
 }
 
-.skin_inset, .skin_inset_deep {
-	border-top: 1px #cbc1b7 solid;
-	border-left: none;
-	border-right: none;
-	border-bottom: 1px #bfbcb9 solid;
-	box-shadow: 0 1px 0 1px #fcfbfa;
-	background-color: #dbd8d5;
+.skin_inset {
+	background: #efebe7;
+	border: 1px #aa9c8f solid;
+	box-shadow: none;
+}
+
+.skin_outset, .skin_outset_deep {
+	border-top: 1px #f7f5f3 solid;
+	border-left: 1px #f7f5f3 solid;
+	border-right: 1px #e4e0dc solid;
+	border-bottom: 1px #e4e0dc solid;
+	box-shadow: 0 0 0 1px #837867;
 }
 
 #s42_taskbar {
