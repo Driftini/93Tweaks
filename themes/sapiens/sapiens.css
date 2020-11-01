@@ -305,6 +305,7 @@ input:not([type="checkbox"]):not([type="radio"]):not([type="range"]):focus, sele
 }
 
 .skin_outset, .skin_outset_deep {
+	background: #efebe7;
 	border-top: 1px #f7f5f3 solid;
 	border-left: 1px #f7f5f3 solid;
 	border-right: 1px #e4e0dc solid;
